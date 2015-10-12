@@ -1,8 +1,8 @@
 class CreateLists < ActiveRecord::Migration
   def change
-    create_table :lists do |t|
-      t.integer :id_recipe
-      t.integer :id_ingredient
+    create_join_table :ingredients, :recipes do |t|
+      t.index :recipe_id
+      t.index :ingredient_id
       t.integer :quantity
       t.text :unit
 
