@@ -6,11 +6,12 @@ Cette application vous permet de vous aider a choisir quoi cuisiner si, comme mo
 ## Résumé
 
 Ce repository contient la partie mobile de l'application ainsi que le web service en ruby on rails. L'application fonctionne de cette façon : Elle maintient une liste d'ingrédients, qui appartiennent a une ou plusieurs catégories. Lorsque l'utilisateur demande un plat, elle choisit entre 2 et 4 catégories complétementaires, puis, choisis aléatoirement des ingrédients qui correspondent a ces catégories. Pour chaque ingrédient, un mode de préparation est choisi. Les résultats ressemblent alors a ça : 
-Recette | 
-Catégorie | Ingrédient choisi | Type de préparation
-Base | Pommes de terres | Sautées
-Viande | Steack | Grillé
-Légume | Carrotes | En salade 
+
+| Catégorie | Ingrédient choisi | Type de préparation |
+|:----------|:------------------|:--------------------|
+|Base | Pommes de terres | Sautées|
+|Viande | Steack | Grillé|
+|Légume | Carrotes | En salade| 
 
 Si l'utilisateur a besoin de plus d'informations sur comment péparer son ingrédient, il peut accéder aux détails du type de préparation pour y consulter les étapes a suivre. 
 
