@@ -1,0 +1,10 @@
+class CreateIngredientCategories < ActiveRecord::Migration
+  def change
+    create_table :ingredient_categories do |t|
+      t.references :ingredient, index: true, foreign_key: true
+      t.references :category, index: true, foreign_key: true
+
+      t.timestamps null: false
+    end
+  end
+end
