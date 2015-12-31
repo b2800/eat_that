@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Eat that!</string>
+    <string name="Ingredient">Ingredient</string>
+    <string name="create_ingredient">Create a new ingredient</string>
+    <string name="manage_ingredient">Manage your ingredients</string>
+    <string name="Name">Name</string>
+    <string name="Categories">Categories</string>
+    <string name="History">Recipes history</string>
+    <string name="manage_stocks">Manage your stocks</string>
+    <string name="create_preparation">Add a new preparation type</string>
+    <string name="manage_preparation">Manage your preparations</string>
+    <string name="steps">Steps</string>
+    <string name="select_lang">Choose your language</string>
+    <string name="english">English</string>
+    <string name="french">Français</string>
+    <string name="generation_title">How about ... </string>
+    <string name="error_no_category_selected">Please choose at least one category</string>
+    <string name="error_no_name_entered">Please type a valid name</string>
+    <string name="warning_create_some_ingredients">Don\'t forget to create or sync ingredients from the settings panel</string>
+    <string name="sync_notification">Syncing...</string>
+    <string name="sync_dialog_title">Synchronise ingredients list</string>
+    <string name="sync_dialog_text">Do you want to download an ingredient list from the Internet?</string>
+
+    <string name="not_implemented_title">Well...</string>
+    <string name="not_implemented_body">That would not be a true Android application without
+    missing features right? But do not despair! They will be available in the paid version !
+    (that does not exists yet)</string>
+
+    <!-- To be changed -->
+    <string name="Base">Base</string>
+    <string name="Meat">Meat</string>
+    <string name="Salad">Salad</string>
+    <string name="Dessert">Dessert</string>
+
+    <string-array name="categories_array">
+        <item>Base</item>
+        <item>Meat</item>
+        <item>Salad</item>
+        <item>Dessert</item>
+    </string-array>
+
+</resources>

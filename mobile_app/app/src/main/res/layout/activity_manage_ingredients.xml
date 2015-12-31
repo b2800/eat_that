@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="app.esiea.eatthat.Activity.ManageIngredientsActivity"
+    android:background="@drawable/background_blue">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ingredient_list"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="54dp"
+        android:clipToPadding="false"
+        android:paddingTop="8dp" />
+
+    <ImageButton
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:id="@+id/btn_new_ingredient"
+        android:background="@drawable/round_button"
+        android:src="@drawable/icon_add"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginBottom="26dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButtonClickCreateIngredient" />
+
+    <ImageButton
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:id="@+id/btn_back"
+        android:background="@drawable/round_button"
+        android:src="@drawable/icon_back"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="25dp"
+        android:onClick="onButtonClickBack"
+        android:layout_alignTop="@+id/btn_new_ingredient"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:id="@+id/btn_sync"
+        android:background="@drawable/round_button"
+        android:src="@drawable/icon_refresh"
+        android:scaleType="centerCrop"
+        android:onClick="onButtonClickSync"
+        android:layout_alignTop="@+id/btn_new_ingredient"
+        android:layout_alignRight="@+id/ingredient_list"
+        android:layout_alignEnd="@+id/ingredient_list"
+        android:layout_marginRight="25dp"
+        android:tint="#000000"
+        android:nestedScrollingEnabled="false" />
+
+</RelativeLayout>

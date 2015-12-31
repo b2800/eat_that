@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Eat that!</string>
+    <string name="Base">Base</string>
+    <string name="Categories">Catégories</string>
+    <string name="Dessert">Dessert</string>
+    <string name="History">Historique</string>
+    <string name="Ingredient">Ingrédient</string>
+    <string name="Meat">Viande</string>
+    <string name="Name">Nom</string>
+    <string name="Salad">Salade</string>
+    <string name="create_ingredient">Créer un nouvel ingrédient</string>
+    <string name="create_preparation">Ajouter un type de préparation</string>
+    <string name="english">English</string>
+    <string name="error_no_category_selected">Veuillez choisir au moins une catégorie</string>
+    <string name="error_no_name_entered">Veuillez entrer un nom valide</string>
+    <string name="warning_create_some_ingredients">N\'oubliez pas de rajouter ou de synchroniser vos ingrédients en passant par la page des paramétres</string>
+    <string name="french">Français</string>
+    <string name="manage_ingredient">Gérer vos ingrédients</string>
+    <string name="manage_preparation">Gérer vos préparations</string>
+    <string name="sync_notification">Synchronisation...</string>
+    <string name="sync_dialog_title">Synchroniser votre liste d\'ingrédients</string>
+    <string name="sync_dialog_text">Voulez vous télécharger une liste d\'ingrédients sur Internet?</string>
+    <string name="manage_stocks">Gérer le stock</string>
+    <string name="not_implemented_body">Ce ne serait pas une vraie application Android sans quelques fonctionnalités manquantes n\'est ce pas? Mais n\'ayez crainte ! Elles seront disponibles dans la version payante ! ( Qui n\'existe pas encore )</string>
+    <string name="not_implemented_title">Eh bien...</string>
+    <string name="select_lang">Choisissez votre langue</string>
+    <string name="generation_title">Et si vous essayiez ... </string>
+    <string-array name="categories_array">
+        <item>Base</item>
+        <item>Viande</item>
+        <item>Salade</item>
+        <item>Dessert</item>
+    </string-array>
+</resources>

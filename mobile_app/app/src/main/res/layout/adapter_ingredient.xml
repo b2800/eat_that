@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="#c8ffffff"
+    android:gravity="center_vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:id="@+id/holder_layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/ingredient_name"
+        android:textColor="#1f1f1f"
+        android:textSize="20sp"
+        android:layout_weight="0.8" />
+
+    <ImageButton
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/btn_edit"
+        android:background="#00ffffff"
+        android:src="@drawable/icon_edit"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/btn_new_ingredient"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:tint="#626262" />
+
+    <ImageButton
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/btn_delete"
+        android:src="@drawable/icon_delete"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/btn_new_ingredient"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:nestedScrollingEnabled="false"
+        android:background="#00ffffff"
+        android:tint="#626262" />
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="app.esiea.eatthat.Activity.LanguageSelectionActivity"
+    android:background="@drawable/background_blue">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_lang"
+            android:id="@+id/textView2"
+            android:layout_marginBottom="24dp"
+            android:textSize="28sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="onButtonClickEnglish"
+            android:layout_marginBottom="24dp">
+
+            <ImageButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:id="@+id/en_button"
+                android:background="@drawable/round_button"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_en_flag"
+                android:onClick="onButtonClickEnglish" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/english"
+                android:id="@+id/en_label"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="onButtonClickFrench">
+
+            <ImageButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:id="@+id/fr_button"
+                android:background="@drawable/round_button"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_fr_flag"
+                android:onClick="onButtonClickFrench" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/french"
+                android:id="@+id/fr_label"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:id="@+id/back_button"
+        android:background="@drawable/round_button"
+        android:src="@drawable/icon_back"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:onClick="onButtonClickBack" />
+</RelativeLayout>

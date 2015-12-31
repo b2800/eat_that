@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="app.esiea.eatthat.Activity.DetailledRecipeGenerationActivity"
+    android:background="@drawable/background_blue">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/generation_title"
+        android:id="@+id/textView4"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/elements_list"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="54dp"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:layout_below="@+id/textView4" />
+
+    <ImageButton
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:id="@+id/imageButton3"
+        android:background="@drawable/round_button"
+        android:src="@drawable/icon_add"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:onClick="onButtonClickAdd" />
+
+    <ImageButton
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:id="@+id/imageButton4"
+        android:background="@drawable/round_button"
+        android:src="@drawable/icon_back"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="25dp"
+        android:onClick="onButtonClickBack"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:id="@+id/imageButton5"
+        android:background="@drawable/round_button"
+        android:src="@drawable/icon_random"
+        android:scaleType="centerCrop"
+        android:onClick="onButtonClickRandomize"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_alignEnd="@+id/elements_list"
+        android:layout_alignRight="@+id/elements_list"
+        android:layout_marginRight="25dp" />
+</RelativeLayout>
